@@ -8,8 +8,24 @@
 }
 
 :root {
+  --bg-color: #faf3eb;
+  --secondary-bg-color: #fffefd;
+  --header-bg-color: #515430;
+  --accent-color: #b97456;
+  --white: #ffffff;
   font-family: "Tenor Sans", sans-serif;
   scroll-behavior: smooth;
 }
 
+img {
+  display: block;
+}
 
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
