@@ -1,0 +1,85 @@
+@import "controls.css";
+
+.hero {
+  background-image: url(../img/bg-cover.svg);
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+  }
+  .hero__image{
+    margin: 40px;
+  }
+  .hero__main-info{
+    margin: 40px;
+  }
+}
+
+.hero__main-info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.hero__subtitle {
+  font-size: 0.75rem;
+  font-family: "Montserrat", sans-serif;
+  margin: 5px 0px;
+}
+
+.hero__title {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 5px 0px;
+}
+
+@media (min-width: 450px) {
+  .hero__title {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+}
+
+.hero__color {
+  color: var(--accent-color);
+}
+
+.title-text__dot {
+  margin: 0;
+  color: var(--accent-color);
+}
+.rating {
+  margin: 5px 0px;
+}
+
+.rating__stars {
+  margin: 5px 0px;
+}
+.rating__text {
+  margin: 5px 0px;
+}
+
+.hero__text {
+  margin: 15px 0px;
+}
+
+.buttons {
+  margin: 5px 0px;
+}
+
+.hero__image {
+  border-top-left-radius: 300px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  height: 400px;
+  object-fit: cover;
+}
