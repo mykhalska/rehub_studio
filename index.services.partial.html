@@ -1,40 +1,100 @@
 <section class="main-services">
-  <p class="main-services__subtitle">-Наші послуги-</p>
-  <h2 class="main-services__title">Ми пропонуємо:</h2>
-  <p class="main-services__text">Обери свій спосіб турботи про себе</p>
-  <div class="buttons">
-  <button class="buttons__button--primary">Жити без болю</button>
-  <button class="buttons__button--primary">Детальніше</button>
-</div>
-  <div class="main-services__carousel">
-    <article class="main-services__item">
-      <img width="260" src="img/accupuncture.jpg" alt="acupuncture" class="main-services__image"/>
-      <h3 class="main-services__name">Акупунктура</h3>
-      <p class="main-services__price">30 хв|₴400</p>
-      <p class="main-services__description">Стимулує відновлення та надає енергію</p>
-    </article>
-    <article class="main-services__item">
-      <img width="260" src="img/massage.jpg" alt="massage" class="main-services__image"/>
-      <h3 class="main-services__name">Масаж</h3>
-      <p class="main-services__price">30-120 хв|₴450-1500</p>
-      <p class="main-services__description">Полегшує біль, покращує тонус м'язів</p>
-    </article>
-    <articleclass="main-services__item">
-      <img width="260" src="img/tapes.jpg" alt="tape" class="main-services__image"/>
-      <h3 class="main-services__name">Тейпування</h3>
-      <p class="main-services__price">15-20 хв|₴350-500</p>
-      <p class="main-services__description">Підтримує м'язи та пришвидшує реабілітацію</p>
-    </article>
-    <article class="main-services__item">
-      <img width="260" src="img/services-training.jpg" alt="physical-therapy" class="main-services__image"/>
-      <h3 class="main-services__name">Лікувально-фізична терапія</h3>
-      <p class="main-services__price">60 хв|₴500</p>
-      <p class="main-services__description">Робота за вашим запитом</p>
-    </article>
-      <article class="main-services__item">
-        <img width="260" src="img/girl-with-mat.jpg" alt="joint-mobility" class="main-services__image"/>
-        <h3 class="main-services__name">Мобільність суглобів</h3>
-        <p class="main-services__price">60 хв|₴500</p>
-        <p class="main-services__description">Покращує мобільність суглобів та загальне самопочуття</p>
-      </article>
+  <div class="main-services__container">
+    <div class="main-services__info">
+      <p class="main-services__subtitle">-Наші послуги-</p>
+      <h2 class="main-services__title">Ми пропонуємо:</h2>
+      <p class="main-services__text">Обери свій спосіб турботи про себе</p>
+    </div>
+    <div class="buttons">
+      <a class="buttons__button buttons__button--primary">Жити без болю</a>
+      <a class="buttons__button buttons__button--secondary">Детальніше</a>
+    </div>
+
+    <div class="main-services__carousel">
+      <ul class="main-services__list">
+        <li class="main-services__item">
+          <article class="service-card">
+            <img
+              src="img/accupuncture.jpg"
+              alt="Акупунктура"
+              class="service-card__image"
+            />
+            <div class="service-card__overlay">
+              <h3 class="service-card__name">Акупунктура</h3>
+              <p class="service-card__price">30 хв | ₴400</p>
+              <p class="service-card__description">
+                Стимулує відновлення та надає енергію
+              </p>
+            </div>
+          </article>
+        </li>
+
+        <li class="main-services__item">
+          <article class="service-card">
+            <img
+              src="img/massage.jpg"
+              alt="Масаж"
+              class="service-card__image"
+            />
+            <div class="service-card__overlay">
+              <h3 class="service-card__name">Масаж</h3>
+              <p class="service-card__price">30-120 хв | ₴450-1500</p>
+              <p class="service-card__description">
+                Полегшує біль, покращує тонус м'язів
+              </p>
+            </div>
+          </article>
+        </li>
+
+        <li class="main-services__item">
+          <article class="service-card">
+            <img
+              src="img/tapes.jpg"
+              alt="Тейпування"
+              class="service-card__image"
+            />
+            <div class="service-card__overlay">
+              <h3 class="service-card__name">Тейпування</h3>
+              <p class="service-card__price">15-20 хв | ₴350-500</p>
+              <p class="service-card__description">
+                Підтримує м'язи та пришвидшує реабілітацію
+              </p>
+            </div>
+          </article>
+        </li>
+
+        <li class="main-services__item">
+          <article class="service-card">
+            <img
+              src="img/services-training.jpg"
+              alt="Лікувально-фізична терапія"
+              class="service-card__image"
+            />
+            <div class="service-card__overlay">
+              <h3 class="service-card__name">Лікувально-фізична терапія</h3>
+              <p class="service-card__price">60 хв | ₴500</p>
+              <p class="service-card__description">Робота за вашим запитом</p>
+            </div>
+          </article>
+        </li>
+
+        <li class="main-services__item">
+          <article class="service-card">
+            <img
+              src="img/girl-with-mat.jpg"
+              alt="Мобільність суглобів"
+              class="service-card__image"
+            />
+            <div class="service-card__overlay">
+              <h3 class="service-card__name">Мобільність суглобів</h3>
+              <p class="service-card__price">60 хв | ₴500</p>
+              <p class="service-card__description">
+                Покращує мобільність суглобів та загальне самопочуття
+              </p>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </div>
 </section>

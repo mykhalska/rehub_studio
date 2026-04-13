@@ -1,0 +1,9 @@
+@import "common.css";
+@import "controls.css";
+
+.prices__subtitle {
+  font-size: 1rem;
+}
+.prices__title {
+  font-size: 2rem;
+}

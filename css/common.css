@@ -10,9 +10,10 @@
 :root {
   --bg-color: #faf3eb;
   --secondary-bg-color: #fffefd;
-  --header-bg-color: #8A7174;
-  --accent-color: #4d5c40;
+  --header-bg-color: #8a7174;
+  --accent-color: #34501c;
   --white: #ffffff;
+  --dark: #555;
   font-family: "Tenor Sans", sans-serif;
   scroll-behavior: smooth;
 }

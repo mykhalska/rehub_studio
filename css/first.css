@@ -14,10 +14,10 @@
   .hero {
     flex-direction: row;
   }
-  .hero__image{
+  .hero__image {
     margin: 40px;
   }
-  .hero__main-info{
+  .hero__main-info {
     margin: 40px;
   }
 }
@@ -27,24 +27,33 @@
   flex-direction: column;
   padding-top: 90px;
   padding-bottom: 90px;
+  margin: 5px;
 }
 
 .hero__subtitle {
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-family: "Montserrat", sans-serif;
   margin: 5px 0px;
+  text-align: center;
+}
+@media (min-width: 450px) {
+  .hero__subtitle {
+    text-align: left;
+  }
 }
 
 .hero__title {
   font-size: 2rem;
   font-weight: 400;
   margin: 5px 0px;
+  text-align: center;
 }
 
 @media (min-width: 450px) {
   .hero__title {
     font-size: 3rem;
     font-weight: 400;
+    text-align: left;
   }
 }
 
@@ -69,6 +78,7 @@
 
 .hero__text {
   margin: 15px 0px;
+  font-size: 1rem;
 }
 
 .buttons {

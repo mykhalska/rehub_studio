@@ -1,24 +1,56 @@
 <section class="reviews">
-    <p class="reviews__subtitle">-відгуки-</p>
-    <h2 class="reviews__title">говорять за нас</h2>
-    <p class="reviews__description">Дізнайтеся, що говорять наші клієнти про індивідуальні процедури.</p>
-    <button class="buttons__button--secondary">Поділитись своєю історією</button>
-    <div class="reviews__comments">
+  <p class="reviews__subtitle">-відгуки-</p>
+  <h2 class="reviews__title">говорять за нас</h2>
+  <p class="reviews__description">
+    Дізнайтеся, що говорять наші клієнти про індивідуальні процедури.
+  </p>
+  <button class="buttons__button--secondary">Поділитись своєю історією</button>
+
+  <div class="reviews__carousel-wrapper">
+    <button class="carousel-btn prev-btn" aria-label="Попередній відгук">
+      &#10094;
+    </button>
+
+    <div class="reviews__viewport">
+      <div class="reviews__comments" id="reviewsTrack">
         <article class="reviews__comment">
-            <header class="reviews__header">
-                <p class="reviews__name">Катерина А.</p>
-                <time class="reviews__date">2025.12.23</time>
-            </header>
-            <p class="reviews__text">«Мені сподобалась консультація у лікаря Таїсії. Швидко і чітко пояснила причини
-                мого болю в спині.
-                Приємним бонусом став план тренувань на кожен день.»</p>
+          <header class="reviews__header">
+            <p class="reviews__name">Катерина А.</p>
+            <time class="reviews__date">2025.12.23</time>
+          </header>
+          <p class="reviews__text">
+            «Мені сподобалась консультація у лікаря Таїсії. Швидко і чітко
+            пояснила причини мого болю в спині. Приємним бонусом став план
+            тренувань на кожен день.»
+          </p>
         </article>
+
         <article class="reviews__comment">
-            <header class="reviews__header">
-                <p class="reviews__name">Марина К.</p>
-                <time class="reviews__date">2026.04.01</time>
-            </header>
-            <p class="reviews__text">«Дякую Анні за чудовий масаж! Вже після 1 сеансу відчула значну легкість в тілі.»
-            </p>
+          <header class="reviews__header">
+            <p class="reviews__name">Марина К.</p>
+            <time class="reviews__date">2026.04.01</time>
+          </header>
+          <p class="reviews__text">
+            «Дякую Анні за чудовий масаж! Вже після 1 сеансу відчула значну
+            легкість в тілі.»
+          </p>
+        </article>
+
+        <article class="reviews__comment">
+          <header class="reviews__header">
+            <p class="reviews__name">Олена В.</p>
+            <time class="reviews__date">2026.04.10</time>
+          </header>
+          <p class="reviews__text">
+            «Дуже приємна атмосфера та професійний підхід. Завжди приємно
+            повертатися до ваших спеціалістів!»
+          </p>
+        </article>
+      </div>
     </div>
+
+    <button class="carousel-btn next-btn" aria-label="Наступний відгук">
+      &#10095;
+    </button>
+  </div>
 </section>

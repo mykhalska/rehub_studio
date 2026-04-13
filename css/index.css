@@ -1,4 +1,8 @@
 @import "common.css";
+@import "controls.css";
 @import "header.css";
 @import "first.css";
-@import"controls.css";
+@import "about.css";
+@import "services.css";
+@import "prices.css";
+@import "reviews.css";
