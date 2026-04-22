@@ -1,6 +1,12 @@
 .header {
   background-color: var(--header-bg-color);
-  padding: 5px;
+  min-height: 80px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .header__logo {
@@ -12,9 +18,9 @@
 .header__link {
   font-family: "Montserrat", sans-serif;
   color: var(--bg-color);
-  align-items: center;
-  justify-content: space-around;
-  flex: 1;
+  padding: 0 15px;
+  white-space: nowrap;
+  font-size: 1rem;
 }
 .header__link:hover {
   color: var(--white);
@@ -22,10 +28,25 @@
 
 .header__nav {
   display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 @media (min-width: 1024px) {
+  .header {
+    flex-wrap: wrap;
+  }
   .header_link {
     display: flex;
   }
+}
+
+.header__socials {
+  display: flex;
+  flex-direction: row;
+}
+.socials__link {
+  height: 40px;
+  color: var(--bg-color);
+  padding: 0 10px;
 }
