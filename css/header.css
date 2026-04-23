@@ -1,7 +1,6 @@
 .header {
   background-color: var(--purple);
   min-height: 80px;
-  padding: 0 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -34,12 +33,12 @@
 }
 
 @media (max-width: 1024px) {
-  .header_link {
+  .header__link {
     display: flex;
     gap: 3px;
     padding: 0 5px;
   }
-  .header{
+  .header {
     padding: 0 30px;
   }
 }
@@ -54,60 +53,90 @@
   padding: 0 10px;
 }
 
-.header__navicon{
+.header__navicon {
   display: block;
   width: 24px;
   height: 2px;
   position: relative;
   background: var(--linen);
-  cursor:pointer;
-  transition: background .2s ease-out;
+  cursor: pointer;
+  transition: background 0.2s ease-out;
+}
+.header__menu {
+  display: block;
 }
 
-.header__navicon:before 
-.header__navicon:after{
-  content: '';
+@media (min-width: 950px) {
+  .header__menu {
+    display: none; 
+  }
+}
+@media (max-width: 950px) {
+  .header__menu {
+    display: block; 
+    z-index: 10;
+  }
+
+  .header__nav,.header__socials {
+    display: none; 
+  }
+
+  .header.responsive .header__nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px; 
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--purple);
+    padding-top: 40px;
+    z-index: 5;
+  }
+}
+.header__navicon:before, .header__navicon:after {
+  content: "";
   width: 100%;
   height: 100%;
-  display:block;
+  display: block;
   position: absolute;
   background: var(--linen);
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
-.header__navicon:before{
+.header__navicon:before {
   top: 7px;
 }
 
-.header__navicon:after{
+.header__navicon:after {
   top: -7px;
 }
 
-.header.responsive .header__nav-menu{
+.header.responsive .header__nav-menu {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 80px;
-  left: o;
-  display:flex;
+  left: 0;
+  display: flex;
   flex-direction: column;
   align-items: center;
   padding: 40px 0;
   gap: 30px;
-  z-index:1;
+  z-index: 1;
 }
 
-.header.responsive .header__navicon{
+.header.responsive .header__navicon {
   background: transparent;
 }
 
-.header.responsive .header__navicon:before{
+.header.responsive .header__navicon:before {
   transform: rotate(-45deg);
 }
-.header.responsive .header__navicon:after{
+.header.responsive .header__navicon:after {
   transform: rotate(45deg);
 }
 .header.responsive .header__navicon:before,
-.header.responsive .header__navicon:after{
+.header.responsive .header__navicon:after {
   top: 0;
 }
