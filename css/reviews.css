@@ -1,5 +1,5 @@
 .reviews {
-  background-color: var(--header-bg-color);
+  background-color: var(--purple);
   block-size: 500px;
 }
 .reviews__carousel-wrapper {
@@ -15,7 +15,7 @@
   font-weight: 400;
   margin: 5px 0px;
   text-align: center;
-  color: var(--secondary-bg-color);
+  color: var(--light-linen);
 }
 
 @media (min-width: 450px) {
@@ -30,7 +30,7 @@
   font-family: "Montserrat", sans-serif;
   margin: 5px 0px;
   text-align: center;
-  color: var(--secondary-bg-color);
+  color: var(--light-linen);
 }
 @media (min-width: 450px) {
   .reviews__subtitle {
@@ -56,7 +56,7 @@
   background-color: var(--bg-color);
   border-radius: 8px;
   text-align: left;
-  box-shadow: var(--secondary-bg-color);
+  box-shadow: var(--light-linen);
 }
 
 .reviews__header {

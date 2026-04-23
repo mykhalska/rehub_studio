@@ -2,7 +2,7 @@
 
 .hero {
   background-image: url(../img/bg-cover.svg);
-  min-height: 500px;
+  min-height: 95vh;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -87,11 +87,6 @@
 
 .buttons {
   margin: 5px 0px;
-}
-
-.buttons__button--secondary :hover {
- text-decoration: underline;
- color: var(--accent-color)
 }
 
 .hero__image {

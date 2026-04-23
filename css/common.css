@@ -8,9 +8,9 @@
 }
 
 :root {
-  --bg-color: #faf3eb;
-  --secondary-bg-color: #fffefd;
-  --header-bg-color: #8a7174;
+  --linen: #faf3eb;
+  --light-linen: #fffefd;
+  --purple: #8a7174;
   --accent-color: #34501c;
   --white: #ffffff;
   --dark: #555;
