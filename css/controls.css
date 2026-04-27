@@ -1,17 +1,25 @@
-.buttons__button--primary{
-    background-color: var(--accent-color);
-    text-decoration: none;
-    display: inline-block;
-    padding: 5px 10px;
-    border-radius: 10px;
-    color: var(--light-linen);
-    font-family: "Montserrat", sans-serif;
+.buttons__button--primary {
+  background-color: var(--accent-color);
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: var(--light-linen);
+  font-family: "Montserrat", sans-serif;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.buttons__button:hover {
+  opacity: 0.9;
 }
 
-.buttons__button--secondary{
-    text-decoration: none;
-    display: inline-block;
-    padding: 5px 10px;
-    border-radius: 10px;
-    font-family: "Montserrat", sans-serif;
+.buttons__button--secondary {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
 }
