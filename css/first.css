@@ -97,3 +97,17 @@
   height: 400px;
   object-fit: cover;
 }
+
+.hero__help{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  width: 60px;
+  background: var(--purple);
+  border-radius: 30px;
+  transition: transform 0.3s ease
+}
+.hero__help:hover{
+  transform: translateY(-5px);
+}

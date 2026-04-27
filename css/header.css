@@ -11,7 +11,7 @@
 
 .header__logo {
   font-family: "Tenor Sans", sans-serif;
-  font-size: 1.875rem;
+  font-size: 1.7rem;
   color: var(--white);
 }
 
@@ -94,7 +94,7 @@
     z-index: 5;
   }
 }
-.header__navicon:before, .header__navicon:after {
+.header__navicon::before, .header__navicon::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -104,11 +104,11 @@
   transition: all 0.2s ease-out;
 }
 
-.header__navicon:before {
+.header__navicon::before {
   top: 7px;
 }
 
-.header__navicon:after {
+.header__navicon::after {
   top: -7px;
 }
 
@@ -130,13 +130,13 @@
   background: transparent;
 }
 
-.header.responsive .header__navicon:before {
+.header.responsive .header__navicon::before {
   transform: rotate(-45deg);
 }
-.header.responsive .header__navicon:after {
+.header.responsive .header__navicon::after {
   transform: rotate(45deg);
 }
-.header.responsive .header__navicon:before,
-.header.responsive .header__navicon:after {
+.header.responsive .header__navicon::before,
+.header.responsive .header__navicon::after {
   top: 0;
 }
